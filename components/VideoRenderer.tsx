@@ -14,7 +14,8 @@ export const VideoRenderer: React.FC<Props> = ({ videoUrl, captions, onComplete,
   const [status, setStatus] = useState<'PREPARING' | 'RENDERING' | 'DONE'>('PREPARING');
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const requestRef = useRef<number>();
+  // Fix: useRef requires an initial value argument when a generic type is provided in some TypeScript configurations
+  const requestRef = useRef<number | undefined>(undefined);
 
   const getSupportedMimeType = () => {
     const types = [
