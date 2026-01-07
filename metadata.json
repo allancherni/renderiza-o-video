@@ -1,5 +1,5 @@
 {
-  "name": "Short Video Caption Editor",
-  "description": "A professional AI-powered tool for refining social media video captions, focusing on readability, flow, and impact across three distinct versions.",
+  "name": "CaptionPro Local",
+  "description": "Ferramenta profissional e offline para embutir legendas em vídeos curtos usando formato padronizado START - END: TEXTO.",
   "requestFramePermissions": []
 }

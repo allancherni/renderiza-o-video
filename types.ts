@@ -1,4 +1,3 @@
-
 export interface Caption {
   start: string;
   end: string;
@@ -10,8 +9,4 @@ export interface VersionOutput {
   title: string;
   captions: Caption[];
   notes: string;
-}
-
-export interface AIResponse {
-  version: VersionOutput;
 }
